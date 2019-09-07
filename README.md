@@ -4,7 +4,7 @@
 # Collaborators
 - Afif (me)
 - Haziq (HTML and CSS)
-we need more people ASAP!!
++ we need more people ASAP!!
 
 I make a link to discord if you want to help me in this project :
 ### [Join my discord server!](https://discord.gg/CXf2XEY)
