@@ -13,7 +13,7 @@ h1 span {
     padding: 10px;
 }
 h1{
-    font-size: 15pt;
+    font-size: 30pt;
     text-align: center;
     padding: 18px 0 18px 0;
     margin: 0 0 10px 0;
@@ -21,4 +21,10 @@ h1{
 p {
     padding: 0;
     margin: 0;
+}
+.copyright {
+    font-size: 8pt;
+    text-align: right;
+    padding-bottom: 10px;
+    color: grey;
 }
