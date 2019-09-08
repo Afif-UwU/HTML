@@ -2,57 +2,70 @@
 <html>
     <head>
         <script type="text/javascript">
-        var imageID=0;
-        function changeimage(every_seconds){
-            //change the image
-            if (!imageID){
-                document.getElementById("myimage").src="Image/329754.jpg";
-                imageID++;
-            }
-            else{if(imageID==1){
-                document.getElementById("myimage").src="Image/159201.jpg";
-                imageID++;
-            }else{if(imageID==2){
-                document.getElementById("myimage").src="Image/795310.jpg";
-                imageID=0;
-            }}}
-            //call same function again for x of seconds
-            setTimeout("changeimage("+every_seconds+")",((every_seconds)*1000));
-        }
+     
+
         </script>
         <title>KSK (Beta)</title>
         <style>
-            body {
-                background-image: changeimage(2);
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .container{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100vh;
+                animation: animate 16s ease-in-out infinite;
+            }
+
+            @keyframes animate{
+                0%,100%{
+                    background-image: url(Image/159201.jpg);
+                }
+                25%{
+                    background-image: url(Image/311691.jpg);
+                }
+                50%{
+                    background-image: url(Image/314020.png);
+                }
+                75%{
+                    background-image: url(Image/329754.jpg);
+                }
             }
         </style>
         <link href="Source code/styles.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
-        
-        <audio autoplay>
-                <source src="Media/Demetori_Japasnize_Dream.mp3" type="audio/mpeg">
-        </audio>
-        
-        <div class="topnav">
-            <a class="active" href="Index.html">Home</a>
-            <a href="#server status">Server status</a>
-            <a href="#help">Help</a>
+        <div class="container">
+            <div class="outer">
+                <div class="details">
+                        <audio autoplay>
+                                <source src="Media/Demetori_Japasnize_Dream.mp3" type="audio/mpeg">
+                        </audio>
+                        
+                        <div class="topnav">
+                            <a class="active" href="Index.html">Home</a>
+                            <a href="#server status">Server status</a>
+                            <a href="FirstStep.html">Help</a>
+                        </div>
+                        
+                        <header>
+                            <h1>Selamat datang ke ksk.com (Beta)</h1>
+                        </header>
+                
+                        <section>
+                            <h2>Laman Utama</h2>
+                            <p>Laman ini masih di dalam penambahbaikan.</p>
+                        </section>
+                
+                        <footer>
+                            <p class="copyright">Made by Afif and Haziq.</p>
+                        </footer>
+                </div>
+            </div>
         </div>
-        
-        <header>
-            <h1>Selamat datang ke ksk.com (Beta)</h1>
-        </header>
-
-        <section>
-            <h2>Laman Utama</h2>
-            <p>Laman ini masih di dalam penambahbaikan.</p>
-        </section>
-
-        <footer>
-            <p class="copyright">Made by Afif and Haziq.</p>
-        </footer>
-
     </body>
 </html>
