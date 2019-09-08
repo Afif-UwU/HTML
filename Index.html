@@ -1,31 +1,58 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>KSK (Beta)</title>
-    <link href="Source code/styles.css" rel="stylesheet" type="text/css">
-    <style>
-        body {
-            background-image: url("Image/329754.jpg");
-            background-size: 85%;
+        <script type="text/javascript">
+        var imageID=0;
+        function changeimage(every_seconds){
+            //change the image
+            if (!imageID){
+                document.getElementById("myimage").src="Image/329754.jpg";
+                imageID++;
+            }
+            else{if(imageID==1){
+                document.getElementById("myimage").src="Image/159201.jpg";
+                imageID++;
+            }else{if(imageID==2){
+                document.getElementById("myimage").src="Image/795310.jpg";
+                imageID=0;
+            }}}
+            //call same function again for x of seconds
+            setTimeout("changeimage("+every_seconds+")",((every_seconds)*1000));
         }
-    </style>
+        </script>
+        <title>KSK (Beta)</title>
+        <style>
+            body {
+                background-image: changeimage(2);
+            }
+        </style>
+        <link href="Source code/styles.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
-            <audio autoplay>
+        
+        <audio autoplay>
                 <source src="Media/Demetori_Japasnize_Dream.mp3" type="audio/mpeg">
-            </audio>
-
-        <center>
-            <h3>
-                <font color="#000000">Welcome to ksk.com (Beta)</font>
-            </h3>
-        </center>
-
-        <div class="section" bgcolor="blue">
-            <h1><span>403 Forbidden</span></h1>
-        <p class="quote">Made by Afif and Haziq</p>
+        </audio>
+        
+        <div class="topnav">
+            <a class="active" href="Index.html">Home</a>
+            <a href="#server status">Server status</a>
+            <a href="#help">Help</a>
         </div>
+        
+        <header>
+            <h1>Selamat datang ke ksk.com (Beta)</h1>
+        </header>
+
+        <section>
+            <h2>Laman Utama</h2>
+            <p>Laman ini masih di dalam penambahbaikan.</p>
+        </section>
+
+        <footer>
+            <p class="copyright">Made by Afif and Haziq.</p>
+        </footer>
 
     </body>
 </html>
