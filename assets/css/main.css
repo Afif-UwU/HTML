@@ -2938,9 +2938,15 @@
 		background-size: cover;
 		background-position: top;
 		background-attachment: fixed;
+<<<<<<< HEAD
 		background-repeat: no-repeat;
 		text-align: center;
 		border-top: 0.5em solid #5385c1;
+=======
+		background-repeat: repeat;
+		text-align: center;
+		
+>>>>>>> b423154607264ecf5c16525c0148283159b71130
 	}
 
 		#banner h1 {
