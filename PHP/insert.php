@@ -6,15 +6,9 @@ $email = $_POST['email'];
 $phoneCode = $_POST['phoneCode'];
 $phone = $_POST['phone'];
 
-$conn = new mysqli($servername, $dbUsername, $dbPassword, $dbname);
+$conn = new mysqli('localhost', 'root', '', 'test');
 
 if (!empty($username) || !empty($password) || !empty($gender) || !empty($email) || !empty($phoneCode) || !empty($phone)){
-    $servername = "localhost";
-    $dbUsername = "root";
-    $dbPassword = "";
-    $dbname = "test";
-
-    $conn = new mysqli($servername, $dbUsername, $dbPassword, $dbname);
 
     if (mysqli_connect_error()){
         die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
