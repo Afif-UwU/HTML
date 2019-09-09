@@ -1,55 +1,149 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <script type="text/javascript">
-        var images=['Image/159201.jpg','Image/311691.jpg','Image/329754.jpg','Image/739505.jpg','Image/neptune.jpg'];
-        var url=0;
-        setInterval(function(){
-            url+=1;
-            if(url==5){
-            url=0;
-            }
-        document.body.style.backgroundImage = 'url('+images[url]+')';
-        document.body.style.backgroundRepeat = "repeat";
-        document.body.style.backgroundSize = "cover";
-        document.body.style.transition = "all 2s ease";
-        },3000);
-        
-        </script>
-        <title>KSK (Beta)</title>
-        <style>
-            body{
-                margin: 0;
-                padding: 0;
-                background-image: url('Image/neptune.jpg');
-                background-size: cover;
-            }
-        </style>
-        <link href="Source code/styles.css" rel="stylesheet" type="text/css">
-    </head>
+<!DOCTYPE HTML>
 
-    <body>
-        <audio autoplay loop preload="metadata" id="audio">
+<!-- Dihasilkan Oleh Muhd Aliff Aiman (1DKB) -->
+
+<html>
+	<head>
+		<title>Arkib KSK</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+        <audio autoplay loop preload="metadata">
             <source src="Media/Demetori_Japanize_Dream.mp3" type="audio/mpeg">
         </audio>
-                        
-        <div class="topnav">
-            <a class="active" href="Index.html">Home</a>
-            <a href="PHP/ram.php">Server status</a>
-            <a href="FirstStep.html">Help</a>
-        </div>
-                        
-        <header>
-            <h1>Selamat datang ke ksk.com (Beta)</h1>
-        </header>
-                
-        <section>    
-            <h2 style="text-align: center">Laman Utama</h2>
-            <p style="text-align: center">Laman ini masih di dalam penambahbaikan.</p>
-        </section>
-                
-        <footer>
-            <p class="copyright">Made by Afif and Haziq.</p>
-        </footer>
-    </body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo">KSK</a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h1>Selamat Datang Ke Arkib KSK</h1>
+				<p>Menyimpan & Menyediakan Modul Sistem Teknologi dan Rangkaian 2019</p>
+			</section>
+
+
+		<!-- Ahli Kumpulan -->
+			<section id="two" class="wrapper style1 special">
+				<div class="inner">
+					<header>
+						<h2>Ahli Kumpulan</h2>
+					</header>
+					<div class="flex flex-4">
+						<div class="box person">
+							<div class="image round">
+								<img src="images/pic03.jpeg" alt="Person 1" />
+							</div>
+							<h3>Muhd Aliff Aiman</h3>
+							
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="images/pic04.jpeg" alt="Person 2" />
+							</div>
+							<h3>Syazwan Zafri</h3>
+							
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="images/pic05.jpeg" alt="Person 3" />
+							</div>
+							<h3>Siti Khadijah</h3>
+							
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="images/pic06.jpeg" alt="Person 4" />
+							</div>
+							<h3>Amylia Natasha</h3>
+							
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="images/pic07.jpeg" alt="Person 5" />
+							</div>
+							<h3>Ain Izzati</h3>
+							
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="images/pic08.jpeg" alt="Person 6" />
+							</div>
+							<h3>Hasanah</h3>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Modul -->
+			<section id="three" class="wrapper special">
+				<div class="inner">
+					<header class="align-center">
+						<h2>Modul KSK</h2>
+					</header>
+					<div class="flex flex-2">
+						<article>
+							<div class="image fit">
+								<img src="images/pic01.png" alt="Pic 01" />
+							</div>
+							<header>
+								<h3>Nota Modul DKB 2132 KP - K5 (2)</h3>
+							</header>
+							
+							<footer>
+								<a href="modul/DKB 2132 KP - K5 (2).doc" class="button special">Muat Turun</a>
+							</footer>
+						</article>
+						<article>
+							<div class="image fit">
+								<img src="images/pic02.png" alt="Pic 02" />
+							</div>
+							<header>
+								<h3>Nota Modul DKB 2132 KP - K3(1)</h3>
+							</header>
+							
+							<footer>
+								<a href="modul/DKB 2132 KP - K3 (1).docx" class="button special">Muat Turun</a>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex">
+						<div class="copyright">
+							<a href="#">Arkib KSK</a>
+						</div>
+						<ul class="icons">
+							<li><a href="www.facebook.com" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="www.twitter.com" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="www.linkedin.com" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
+							<li><a href="www.pinterest.com" class="icon fa-pinterest-p"><span class="label">Pinterest</span></a></li>
+							<li><a href="www.vimeo.com" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
