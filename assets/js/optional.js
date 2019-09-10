@@ -1,4 +1,4 @@
-var images=['Images/banner.jpg','Image/neptune.jpg'];
+var images=['Image/159201.jpg', 'Image/311691.jpg', 'Image/314020.png', 'Image/329754.jpg','Image/neptune.jpg'];
         var url=0;
         setInterval(function(){
             url+=1;
