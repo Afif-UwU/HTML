@@ -2,8 +2,9 @@
  this webpage is created for my school project. its still far from the goal but i have my friends helped me to make this webpage better. I wanted more people help me making this webpage since next week is the last week for my school project.
 
 # Collaborators
-- Afif (HTML, JavaScript and PHP)
+- Afif (HTML, CSS and JavaScript )
 - Haziq (HTML, CSS, JavaScript and PHP)
+- Aliff (HTML, CSS and JavaScript)
 + we need more people ASAP!!
 
 I make a link to discord if you want to help me in this project :
