@@ -238,7 +238,7 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    animation: animate 16s ease infinite;
+    animation: animate 45s ease infinite;
 }
 
 header .header-content {
