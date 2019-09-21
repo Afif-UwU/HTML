@@ -9,7 +9,7 @@ body
     font-family: courier;
     background-size: cover;
     background-position: center;
-    animation: animate 40s ease-in-out infinite;
+    animation: animate 20s ease-in-out infinite;
 }
 
     .container
